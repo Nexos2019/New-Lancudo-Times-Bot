@@ -32,12 +32,12 @@ client.on('message', message => {
     const article = new Discord.RichEmbed()
      .setColor('#1fceff')
     .setTitle('**__' + args[0] + '__**')
-    .setURL('https://twitter.com/@newlancudotimes')
-    .setAuthor('New Lancudo Times', client.users.get(`677129083582152715`).avatarURL, 'https://twitter.com/@newlancudotimes')
+    //.setURL('Link to your Website')
+    .setAuthor('New Lancudo Times', client.users.get(`Bots User ID`).avatarURL, 'Link to your Website')
     .setDescription(args[1])
     .setTimestamp()
     .setFooter(message.author.username, message.author.avatarURL);
-    client.channels.get(`676568248942067712`).send(article);}
+    client.channels.get(`ChannelID of where the Message is suppossed to be send in`).send(article);}
   
   }) 
 
